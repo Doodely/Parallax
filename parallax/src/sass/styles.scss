@@ -1,0 +1,33 @@
+@import '~normalize.css';
+@import './variables';
+@import './mixins';
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:500);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
+
+$font-stack: "Ubuntu";
+$primary-color: rgb(255, 0, 100);
+
+body {
+  font-family: $font-stack;
+}
+
+a {
+  margin-right: 2px;
+}
+a:link,
+a:visited {
+  border: none;
+  color: $primary-color;
+  text-decoration: none;
+}
+a.active {
+  border-bottom: 2px solid  $primary-color;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

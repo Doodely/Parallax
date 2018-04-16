@@ -5,7 +5,7 @@ import { routerTransition } from '../../router.animations';
   selector: 'about',
   template: `<h1>About</h1>`,
   animations: [routerTransition()],
-  host: {'[@routerTransition]': 'slideToRight'}
+  host: {'[@routerTransition]': ''}
 })
 export class AboutComponent {
 
